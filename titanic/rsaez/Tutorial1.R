@@ -1,0 +1,1 @@
+setwd("~/datascience/titanic/rsaez")
