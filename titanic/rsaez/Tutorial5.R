@@ -133,7 +133,7 @@ library(party)
 set.seed(415)
 
 # ahora vamos a crear el modelo basado en Conditional Inference
-fit <- cforest(as.factor(Survived) ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked + Title + FamilySize + FamilyID, data = train, controls=cforest_unbiased(ntree=2000, mtry=3))
+fit <- cforest(as.factor(Survived) ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked + Title + FamilySize + FamilyID, data = train, controls=cforest_unbiased(ntree=5000, mtry=3))
 # este tipo de Forest soporta mas niveles de factores que Random Forest y por ello utilizamos el FamilyID original
 
 # generamos el CSV para el submition ahora con parametros para OOB (Out-of-Bag)
