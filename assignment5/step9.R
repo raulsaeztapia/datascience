@@ -1,7 +1,3 @@
-# Trevor Stephens - 9 Jan 2014
-# Titanic: Getting Started With R - Part 1: Booting up in R
-# Full guide available at http://trevorstephens.com/
-
 # Set working directory and import datafiles
 setwd("/home/user/datascience/assignment5")
 seaflow <- read.csv("seaflow_21min_sin_208.csv")
